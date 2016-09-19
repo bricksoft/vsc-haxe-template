@@ -138,6 +138,14 @@ To disable a buld target, simply open your build.hxml file on the root of your w
 [...]
 ```
 
+## Contribution & License
+
+This Template is licensed under MIT Licens, a copy of it is contained in this Repository.
+
+If you want to contribute to this repository, feel free to grab a fork and submit a pull request.
+
+Also see Projects and Issues section for details about current bugs, todos, etc. 
+
 ## Footnotes
 
 ### SWF
