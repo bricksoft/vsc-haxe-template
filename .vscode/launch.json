@@ -1,0 +1,50 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch compiled HAXE (C#)",
+            "type": "node",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceRoot}/.vscode/runner.js",
+            "args": ["${workspaceRoot}/build/cs/bin/Main.exe"],
+            "cwd": "${workspaceRoot}/build/cs/bin"
+        },
+        {
+            "name": "Launch compiled HAXE (JAVA)",
+            "type": "node",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceRoot}/.vscode/runner.js",
+            "args": ["java -jar ${workspaceRoot}/build/java/Main.jar"],
+            "cwd": "${workspaceRoot}/build/java"
+        },
+        {
+            "name": "Launch compiled HAXE (JS)",
+            "type": "node",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceRoot}/build/js/Main.js",
+            "args": [""],
+            "cwd": "${workspaceRoot}/build/js"
+        },
+        {
+            "name": "Launch compiled HAXE (PHP)",
+            "type": "php",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceRoot}/build/php/Main.php",
+            "args": [],
+            "cwd": "${workspaceRoot}/build/php"
+        },
+        {
+            "name": "Launch compiled HAXE (SWF)",
+            "type": "node",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceRoot}/.vscode/runner.js",
+            "args": ["","SWF is not supported to be run from THIS. Please open the file manually."],
+            "cwd": "${workspaceRoot}"
+        }
+    ]
+}
