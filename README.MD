@@ -19,7 +19,7 @@ Also you will need:
 * [Haxe](https://haxe.org/)
 * [NodeJS](https://nodejs.org/)
 
-By default all Build Targets are enabled, so if you want to successfully compile, you might want to [disable build targets](#disabling-Build-targets).
+By default all Build Targets are enabled, so if you want to successfully compile, you might want to [disable build targets](#disabling-build-targets).
 
 If you want to run and debug PHP code, you will also need:
 
@@ -48,7 +48,7 @@ Every Target by default has a directory for target specific includes.
 So if you need something included only for e.g. ```Java``` you can put it in ```targets/java/``` folder in your workspace root.
 These files will be automatically included by Haxe compiler.
 
-## installation
+## Installation
 
 To successfully use this Template you will need to some easy steps.
 Before we get into the "console stuff", we need to install Haxe and Visual Studio Code.
