@@ -19,6 +19,8 @@ Also you will need:
 * [Haxe](https://haxe.org/)
 * [NodeJS](https://nodejs.org/)
 
+If you are running Linux or Mac OS, [Mono](www.mono-project.com/download/) will be required for execution of some targets.
+
 By default all Build Targets are enabled, so if you want to successfully compile, you might want to [disable build targets](#disabling-build-targets).
 
 If you want to run and debug PHP code, you will also need:
