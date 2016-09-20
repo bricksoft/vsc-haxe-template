@@ -108,7 +108,7 @@ First open up ```hxml/<mytarget>.hxml``` and add your target as following
 # My Target
     -cp targets/<mytarget>
     -<target> build/<target>
-    --next
+
 ```
 
 save it and activate it by adding its name into ```targets.json```.
@@ -142,7 +142,7 @@ If you want to use a library for your target, simply append it by editing your t
     -cp targets/<mytarget>
     -<target> build/<target>
     -lib <mylib>
-    --next
+
 ```
 
 ### Disabling Build Targets
