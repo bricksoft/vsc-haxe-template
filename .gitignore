@@ -49,5 +49,8 @@ Temporary Items
 # Don't track builds
 build/*/*
 
+# Don't track vscode specific caches
+.vscode/.*
+
 # Don't ignore gitignores
 !.gitkeep
