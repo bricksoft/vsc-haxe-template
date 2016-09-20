@@ -7,7 +7,7 @@ var run =function(runnable){
             var exitcode = 0;
             if(err == null){
                 console.log("Program successfully ran.");
-                console.log(data == null || data == 0? "exit code: 0": "returned: "+data);
+                console.log(data == null || data == 0? "exit code: 0": "output:\r\n"+data);
             } else {
                 exitcode = -1;
                 console.log("Program did NOT successfully run.");
