@@ -3,4 +3,3 @@
 #-------------------------
     -cp targets/lua
     -lua build/lua/Main.lua
---next

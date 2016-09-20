@@ -13,16 +13,14 @@
 --each
 
 #-------------------------
-# JavaScript-Target
+# PYTHON-Target
 #-------------------------
-    -cp targets/js
-    -js build/js/Main.js
---next
+    -cp targets/swf
+    -python build/swf/Main.swf
 
-#-------------------------
-# C#-Target
-#-------------------------
-    -cp targets/cs
-    -cs build/cs/
 --next
-
+#-------------------------
+# AS3-Target
+#-------------------------
+    -cp targets/as
+    -as3 build/as/
