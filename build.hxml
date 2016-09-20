@@ -13,14 +13,70 @@
 --each
 
 #-------------------------
-# PYTHON-Target
-#-------------------------
-    -cp targets/swf
-    -python build/swf/Main.swf
-
---next
-#-------------------------
 # AS3-Target
 #-------------------------
     -cp targets/as
     -as3 build/as/
+
+--next
+#-------------------------
+# C++-Target
+#-------------------------
+    -cp targets/cpp
+    -cpp build/cpp/
+
+--next
+#-------------------------
+# C#-Target
+#-------------------------
+    -cp targets/cs
+    -cs build/cs/
+
+--next
+#-------------------------
+# JAVA-Target
+#-------------------------
+    -cp targets/java
+    -java build/java
+
+--next
+#-------------------------
+# JavaScript-Target
+#-------------------------
+    -cp targets/js
+    -js build/js/Main.js
+
+--next
+#-------------------------
+# LUA-Target
+#-------------------------
+    -cp targets/lua
+    -lua build/lua/Main.lua
+
+--next
+#-------------------------
+# NEKO-Target
+#-------------------------
+    -cp targets/neko
+    -neko build/neko/Main.n
+
+--next
+#-------------------------
+# PHP-Target
+#-------------------------
+    -cp targets/php
+    -php build/php/
+
+--next
+#-------------------------
+# PYTHON-Target
+#-------------------------
+    -cp targets/py
+    -python build/py/Main.py
+
+--next
+#-------------------------
+# PYTHON-Target
+#-------------------------
+    -cp targets/swf
+    -python build/swf/Main.swf
