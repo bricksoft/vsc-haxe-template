@@ -89,6 +89,7 @@ After installation of all requirements for your needs, we will now configure you
 There isn't much to do, except for those who don't want to compile every target.
 If you want to add a target, jump to section [Adding a Target](#adding-build-targets).
 If you dont need or dont want a specific target simply [disable it](#disabling-build-targets) in ```targets.json```.
+If you want to add a library to your target, jump to section [Adding a Library to a Target](#adding-a-library-to-a-target).
 
 ## Compilation
 
@@ -104,16 +105,13 @@ If you want to add it like this Template does, do the following:
 First open up ```hxml/<mytarget>.hxml``` and add your target as following
 
 ```code
-[...]
 # My Target
     -cp targets/<mytarget>
     -<target> build/<target>
     --next
-[...]
 ```
 
 save it and activate it by adding its name into ```targets.json```.
-
 
 As you might have noticed, there isn't a ```targets/<mytarget>``` directory in your workspace, so create it.
 
@@ -133,6 +131,19 @@ Now open up ```.vscode/launch.json``` and add a new launch configuration.
 ```
 
 please change ```<myexecutable>``` and ```<mytarget>``` to your target.
+
+### Adding a Library to a Target
+
+If you want to use a library for your target, simply append it by editing your target file
+(```hxml/<mytarget>```)
+
+```code
+# My Target
+    -cp targets/<mytarget>
+    -<target> build/<target>
+    -lib <mylib>
+    --next
+```
 
 ### Disabling Build Targets
 
@@ -157,7 +168,7 @@ This Template is licensed under MIT Licens, a copy of it is contained in this Re
 
 If you want to contribute to this repository, feel free to grab a fork and submit a pull request.
 
-Also see Projects and Issues section for details about current bugs, todos, etc. 
+Also see Projects and Issues section for details about current bugs, todos, etc.
 
 ## Footnotes
 
