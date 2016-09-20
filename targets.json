@@ -1,0 +1,13 @@
+[
+    // for each value there needs to be a file in hxml/ with extension ".hxml"
+    "as",
+    "cpp",
+    "cs",
+    "java",
+    "js",
+    "lua",
+    "neko",
+    "php",
+    "py",
+    "swf"
+]

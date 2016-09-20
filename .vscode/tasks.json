@@ -1,11 +1,26 @@
 {
     "version": "0.1.0",
-    "command": "haxe",
-    "args": ["build.hxml"],
+    "linux": { 
+        "command": "sh",
+        "args": ["-c"] 
+    },
+    "osx": {
+        "command": "sh",
+        "args": ["-c"] 
+    },
+    "windows": {
+        "command": "cmd",
+        "args": ["/c"] 
+    },
     "tasks": [
         {
             "taskName": "build",
             "isBuildCommand": true,
+            "args": [
+                "node .vscode/prepare.js ${workspaceRoot}",
+                "&& haxe build.hxml"
+            ],
+            "suppressTaskName": true,
             "problemMatcher": {
                 "owner": "haxe",
                 "pattern": {
@@ -19,6 +34,14 @@
                     "message": 7
                 }
             }
+        },
+        {
+            "taskName": "prepare",
+            "isBuildCommand": false,
+            "suppressTaskName": true,
+            "args": [
+                "node .vscode/prepare.js ${workspaceRoot}"
+            ]
         }
     ]
 }

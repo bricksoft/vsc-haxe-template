@@ -1,0 +1,28 @@
+#-----------------------------
+# General Target Configuration
+#-----------------------------
+
+# setup source dir
+-cp src
+
+# setup main file
+-main Main
+
+
+
+--each
+
+#-------------------------
+# JavaScript-Target
+#-------------------------
+    -cp targets/js
+    -js build/js/Main.js
+--next
+
+#-------------------------
+# C#-Target
+#-------------------------
+    -cp targets/cs
+    -cs build/cs/
+--next
+
