@@ -11,6 +11,15 @@
             "cwd": "${workspaceRoot}/build/cs/bin"
         },
         {
+            "name": "Launch compiled HAXE (C++)",
+            "type": "node",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceRoot}/.vscode/runner.js",
+            "args": ["${workspaceRoot}/build/cpp/Main.exe"],
+            "cwd": "${workspaceRoot}/build/cpp"
+        },
+        {
             "name": "Launch compiled HAXE (JAVA)",
             "type": "node",
             "request": "launch",

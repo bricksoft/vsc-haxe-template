@@ -36,6 +36,11 @@
     -cs build/cs/
 --next
 
+# C++-Target
+    -cp targets/cpp
+    -cpp build/cpp/
+--next
+
 # JAVA-Target
     -cp targets/java
     -java build/java
