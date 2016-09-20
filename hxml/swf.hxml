@@ -1,0 +1,6 @@
+#-------------------------
+# PYTHON-Target
+#-------------------------
+    -cp targets/swf
+    -python build/swf/Main.swf
+--next

@@ -1,0 +1,6 @@
+#-------------------------
+# JAVA-Target
+#-------------------------
+    -cp targets/java
+    -java build/java
+--next

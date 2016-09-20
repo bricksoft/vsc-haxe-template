@@ -1,0 +1,6 @@
+#-------------------------
+# NEKO-Target
+#-------------------------
+    -cp targets/neko
+    -neko build/neko/Main.n
+--next

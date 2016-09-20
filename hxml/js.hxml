@@ -1,0 +1,6 @@
+#-------------------------
+# JavaScript-Target
+#-------------------------
+    -cp targets/js
+    -js build/js/Main.js
+--next

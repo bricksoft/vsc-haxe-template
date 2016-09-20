@@ -1,0 +1,6 @@
+#-------------------------
+# PHP-Target
+#-------------------------
+    -cp targets/php
+    -php build/php/
+--next

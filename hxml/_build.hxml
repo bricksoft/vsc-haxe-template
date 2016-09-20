@@ -1,0 +1,13 @@
+#-----------------------------
+# General Target Configuration
+#-----------------------------
+
+# setup source dir
+-cp src
+
+# setup main file
+-main Main
+
+
+
+--each

@@ -1,0 +1,6 @@
+#-------------------------
+# PYTHON-Target
+#-------------------------
+    -cp targets/py
+    -python build/py/Main.py
+--next
