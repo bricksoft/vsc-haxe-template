@@ -35,13 +35,24 @@ Please Note, that all referenced requirements might also require thirdparty soft
 By default there are predifened Launch Configurations.
 Available Tasks are:
 
+* Launch Compiled HAXE (AS)
+* Launch Compiled HAXE (C++)
 * Launch Compiled HAXE (C#)
 * Launch Compiled HAXE (JAVA)
 * Launch Compiled HAXE (JS)
+* Launch Compiled HAXE (LUA)
+* Launch Compiled HAXE (NEKO)
 * Launch Compiled HAXE (PHP)
+* Launch Compiled HAXE (PYTHON)
 * Launch Compiled HAXE (SWF)
 
-These Configurations will - except for SWF[[1]](#swf) and PHP[[2]](#php) - be run by NodeJS.
+These Configurations will be run by NodeJS.
+Exceptions:
+
+* PHP[[1]](#php)
+* ActionScript3[[2]](#external-software-needed)
+* SWF[[2]](#external-software-needed)
+
 Also JS Task will be run in NodeJS since if you wanted to debug it, you should open it manually in a browser of your choice.
 
 ## Per-Target Includes
@@ -54,7 +65,9 @@ These files will be automatically included by Haxe compiler.
 
 To successfully use this Template you will need to some easy steps.
 Before we get into the "console stuff", we need to install Haxe and Visual Studio Code.
-After that we get into the console and type
+After that we get into the console and install our haxe libraries we need for our desired targets.
+
+E.g. for C# and java we need to type:
 
 ```console
 $ haxelib install hxcs
@@ -75,7 +88,7 @@ Now you can close the console, we won't need it for the next steps.
 After installation of all requirements for your needs, we will now configure your workspace.
 There isn't much to do, except for those who don't want to compile every target.
 If you want to add a target, jump to section [Adding a Target](#adding-build-targets).
-If you dont need or dont want a specific target simply [disable it](#disabling-build-targets) in ```build.hxml```.
+If you dont need or dont want a specific target simply [disable it](#disabling-build-targets) in ```targets.json```.
 
 ## Compilation
 
@@ -85,10 +98,10 @@ So for example Compilation of ```JS``` will be stored in ```${WorkspaceRoot}/bul
 
 ### Adding Build Targets
 
-To add a build target, basically there is only to add it to ```build.hxml```.
-If you want to add it like this Template does do the following:
+To add a build target, basically there is only to add it in a file named as your target + ".hxml" in directory hxml.
+If you want to add it like this Template does, do the following:
 
-First open up ```build.hxml``` and add your target as following
+First open up ```hxml/<mytarget>.hxml``` and add your target as following
 
 ```code
 [...]
@@ -98,6 +111,9 @@ First open up ```build.hxml``` and add your target as following
     --next
 [...]
 ```
+
+save it and activate it by adding its name into ```targets.json```.
+
 
 As you might have noticed, there isn't a ```targets/<mytarget>``` directory in your workspace, so create it.
 
@@ -120,23 +136,18 @@ please change ```<myexecutable>``` and ```<mytarget>``` to your target.
 
 ### Disabling Build Targets
 
-To disable a buld target, simply open your build.hxml file on the root of your workspace and comment out that target.
+To disable a buld target, simply open your ```tagets.json``` file on the root of your workspace 
+and comment out that target or remove that line completely.
 
 ```code
 [...]
-# JAVA-Target
-    -cp targets/java
-    -java build/java
---next
+    "java",
 [...]
 ```
 
 ```code
 [...]
-# JAVA-Target
-#    -cp targets/java
-#    -java build/java
-#--next
+    //"java",
 [...]
 ```
 
@@ -150,10 +161,10 @@ Also see Projects and Issues section for details about current bugs, todos, etc.
 
 ## Footnotes
 
-### SWF
-
-[1]: SWF is not supported to be run without thirdparty software, so it won't open.
-
 ### PHP
 
-[2]: Since the compiled script will be executed in the CLI, you will need a proper installation of PHP in your PATH. Also you will need the PHP extension for VSCode.
+[1]: Since the compiled script will be executed in the CLI, you will need a proper installation of PHP in your PATH. Also you will need the PHP extension for VSCode.
+
+### external Software Needed
+
+[2]: the Taget is not supported to be run without thirdparty software, so it won't open.
