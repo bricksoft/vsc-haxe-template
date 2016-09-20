@@ -1,5 +1,4 @@
 [
-    // for each value there needs to be a file in hxml/ with extension ".hxml"
     "as",
     "cpp",
     "cs",
