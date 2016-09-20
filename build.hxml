@@ -15,25 +15,9 @@
 # Per Target Configuration
 #-------------------------
 
-
-# PHP-Target
-    -cp targets/php
-    -php build/php/
---next
-
-# JavaScript-Target
-    -cp targets/js
-    -js build/js/Main.js
---next
-
-# Flash-Target
-    -cp targets/swf
-    -swf build/swf/Main.swf
---next
-
-# C#-Target
-    -cp targets/cs
-    -cs build/cs/
+# AS3-Target
+    -cp targets/as
+    -as3 build/as/
 --next
 
 # C++-Target
@@ -41,7 +25,42 @@
     -cpp build/cpp/
 --next
 
+# C#-Target
+    -cp targets/cs
+    -cs build/cs/
+--next
+
 # JAVA-Target
     -cp targets/java
     -java build/java
+--next
+
+# JavaScript-Target
+    -cp targets/js
+    -js build/js/Main.js
+--next
+
+# LUA-Target
+    -cp targets/lua
+    -lua build/lua/Main.lua
+--next
+
+# NEKO-Target
+    -cp targets/neko
+    -neko build/neko/Main.n
+--next
+
+# PHP-Target
+    -cp targets/php
+    -php build/php/
+--next
+
+# PYTHON-Target
+    -cp targets/py
+    -python build/py/Main.py
+--next
+
+# Flash-Target
+    -cp targets/swf
+    -swf build/swf/Main.swf
 --next

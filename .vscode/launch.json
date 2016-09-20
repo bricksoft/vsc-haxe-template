@@ -2,13 +2,13 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch compiled HAXE (C#)",
+            "name": "Launch compiled HAXE (AS)",
             "type": "node",
             "request": "launch",
             "preLaunchTask": "build",
             "program": "${workspaceRoot}/.vscode/runner.js",
-            "args": ["${workspaceRoot}/build/cs/bin/Main.exe"],
-            "cwd": "${workspaceRoot}/build/cs/bin"
+            "args": ["","ActionScript is not supported to be run from THIS. Please open the file manually."],
+            "cwd": "${workspaceRoot}/build/as"
         },
         {
             "name": "Launch compiled HAXE (C++)",
@@ -18,6 +18,15 @@
             "program": "${workspaceRoot}/.vscode/runner.js",
             "args": ["${workspaceRoot}/build/cpp/Main.exe"],
             "cwd": "${workspaceRoot}/build/cpp"
+        },
+        {
+            "name": "Launch compiled HAXE (C#)",
+            "type": "node",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceRoot}/.vscode/runner.js",
+            "args": ["${workspaceRoot}/build/cs/bin/Main.exe"],
+            "cwd": "${workspaceRoot}/build/cs/bin"
         },
         {
             "name": "Launch compiled HAXE (JAVA)",
@@ -38,6 +47,24 @@
             "cwd": "${workspaceRoot}/build/js"
         },
         {
+            "name": "Launch compiled HAXE (LUA)",
+            "type": "node",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceRoot}/.vscode/runner.js",
+            "args": ["lua ${workspaceRoot}/build/lua/Main.lua"],
+            "cwd": "${workspaceRoot}/build/lua"
+        },
+        {
+            "name": "Launch compiled HAXE (NEKO)",
+            "type": "node",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceRoot}/.vscode/runner.js",
+            "args": ["neko ${workspaceRoot}/build/neko/Main.n"],
+            "cwd": "${workspaceRoot}/build/neko"
+        },
+        {
             "name": "Launch compiled HAXE (PHP)",
             "type": "php",
             "request": "launch",
@@ -45,6 +72,15 @@
             "program": "${workspaceRoot}/build/php/Main.php",
             "args": [],
             "cwd": "${workspaceRoot}/build/php"
+        },
+        {
+            "name": "Launch compiled HAXE (PYTHON)",
+            "type": "node",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceRoot}/.vscode/runner.js",
+            "args": ["python ${workspaceRoot}/build/py/Main.py"],
+            "cwd": "${workspaceRoot}/build/py"
         },
         {
             "name": "Launch compiled HAXE (SWF)",
