@@ -69,7 +69,7 @@
             "type": "php",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceRoot}/build/php/Main.php",
+            "program": "${workspaceRoot}/build/php/index.php",
             "args": [],
             "cwd": "${workspaceRoot}/build/php"
         },
