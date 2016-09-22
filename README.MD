@@ -1,15 +1,20 @@
 # VS Code Haxe Template
 
+[![npm version](https://badge.fury.io/js/haxe-vsc-template.svg)](https://badge.fury.io/js/haxe-vsc-template)
+
 This Template is designed to ease programming with [HaxeLang](https://haxe.org) in [Visual Studio Code](https://code.visualstudio.com).
 It uses the VSCode Extension [Legacy Haxe](https://marketplace.visualstudio.com/items?itemName=haxedevs.haxe) by Haxe Devs.
 For this to work, this Template assumes you to install all recommended extensions, so everything 'just runs'.
 Also you can extend it by upcomming haxelib language extensions, by adding a line to the ```Build.hxml``` file.
+
+You can use npm to install our setup tool for the most convenient way.
 
 ## Features
 
 * Predefined Tasks for a set of Targets. [[Tasks]](#tasks)
 * Per-Target Includes [[Includes]](#per-target-includes)
 * easy to extend [[Adding a Target]](#adding-build-targets)
+* installable via npm [[npm usage]](#using-npm)
 
 ## Requirements
 
@@ -82,6 +87,22 @@ Done
 Yeah! That was easy, wasn't it?
 
 Now you can close the console, we won't need it for the next steps.
+
+## Using npm
+
+We provide a npm package for you to install this template even more convenient.
+
+To install the package run
+
+> npm install -g haxe-vsc-template
+
+after that you can simply create a new project by typing
+
+> init_Haxe `<directory>`
+
+You can even omit ```<directory>```.
+
+``init_Haxe`` then installs to your current working directory (cwd).
 
 ## Configuration
 
