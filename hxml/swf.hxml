@@ -1,5 +1,5 @@
 #-------------------------
-# PYTHON-Target
+# SWF-Target
 #-------------------------
     -cp targets/swf
     -swf build/swf/Main.swf
